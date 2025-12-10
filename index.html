@@ -1,140 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Professional roofing sales framework - Modern, responsive website for roofing consultants">
-    <title>Roofing Sales Framework | Professional Platform</title>
+    <meta name="description" content="Asesoría independiente en roofing - Diagnóstico preciso, estimación realista y plan claro para reparar tu techo sin sobreprecios">
+    <title>Roofing Advisor | Asesoría Independiente</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <nav id="navbar" role="navigation" aria-label="Main">
         <div class="container">
-            <div class="nav-brand">Roofing Pro</div><button class="nav-toggle" id="navToggle"
-                aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            <div class="nav-brand">Roofing Advisor</div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Qué hacemos</a></li>
+                <li><a href="#soft-quote">Soft-Quote</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#pricing">Precios</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </div>
     </nav>
+
     <main>
-        <section id="home" class="hero">
+        <!-- HERO -->
+        <section id="home" class="section hero">
             <div class="container">
-                <h1>Protección, claridad y asesoría experta para reparar tu techo con total confianza.</h1>
-                <p>Obtén un diagnóstico preciso, una estimación realista del costo y un plan de acción claro para reparar tu techo de forma segura, informada y sin riesgos de sobreprecio.</p><a href="#contact" class="btn-primary">Agendar llamada</a>
+                <span class="eyebrow">Asesoría independiente en roofing</span>
+                <h1 class="hero-title">
+                    Protección, claridad y asesoría experta para reparar tu techo con total confianza.
+                </h1>
+                <p class="hero-subtitle">
+                    Obtén un diagnóstico preciso, una estimación realista del costo y un plan de acción claro para reparar tu techo de forma segura, informada y sin riesgos de sobreprecio.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#contact" class="btn btn-primary">Agendar llamada</a>
+                    <a href="#proceso" class="btn btn-secondary">Ver proceso</a>
+                </div>
             </div>
         </section>
-        <section id="about">
+
+        <!-- ABOUT / WHAT WE DO -->
+        <section id="about" class="section section-about">
             <div class="container">
-    <span class="eyebrow">Ventaja principal</span>
-    <h2>El único sistema que te ofrece una estimación realista ANTES de hablar con contratistas.</h2>
+                <span class="eyebrow">Qué hacemos</span>
+                <h2>Tu asesor independiente en roofing</h2>
 
-    <p class="lead">
-      Analizo y comparo los precios estándar de varios contratistas en tu área para establecer un rango de costo justo y transparente. Esta evaluación evita sobreprecios, reparaciones innecesarias y decisiones tomadas bajo presión.
-    </p>
+                <p class="lead">
+                    Ayudo a propietarios a entender el estado real de su techo, evitar sobreprecios y tomar decisiones informadas con total transparencia. No vendo reparaciones ni represento a contratistas; trabajo únicamente para ti.
+                </p>
+                <p>
+                    Mi sistema combina diagnóstico técnico, una estimación realista (Soft-Quote) y asesoría estratégica para que puedas reparar tu techo sin estrés, sin riesgos y con absoluta claridad.
+                </p>
 
-    <div class="soft-quote-comparison">
-      <div class="card inflated">
-        <h3>Cotizaciones infladas</h3>
-        <p>$11,500 – $16,000</p>
-      </div>
-      <div class="card realistic">
-        <h3>Rango realista según mercado</h3>
-        <p>$8,200 – $9,600</p>
-      </div>
-    </div>
+                <div id="proceso" class="steps-grid">
+                    <div class="step-card">
+                        <h3>1. Evaluación técnica</h3>
+                        <p>Identifico el problema real y explico la causa en lenguaje sencillo.</p>
+                    </div>
+                    <div class="step-card">
+                        <h3>2. Soft-Quote</h3>
+                        <p>Defino un rango de precio realista según contratistas locales.</p>
+                    </div>
+                    <div class="step-card">
+                        <h3>3. Opciones claras</h3>
+                        <p>Comparamos reparación mínima, completa o reemplazo, con pros y contras.</p>
+                    </div>
+                    <div class="step-card">
+                        <h3>4. Acompañamiento</h3>
+                        <p>Te acompaño como supervisor independiente si decides avanzar.</p>
+                    </div>
+                </div>
 
-    <p class="key-message">
-      Sin este análisis, entras a la conversación con contratistas sin una referencia objetiva.
-    </p>
-  </div>
-</section>
-        <section id="services">
+                <p class="tagline">
+                    Tu techo, tu decisión — con información clara y honesta.
+                </p>
+            </div>
+        </section>
+
+        <!-- SOFT-QUOTE COMO VENTA PRINCIPAL -->
+        <section id="soft-quote" class="section section-soft-quote">
             <div class="container">
-                <h2>Our Services</h2>
-                <div class="service-grid">
+                <span class="eyebrow">Ventaja principal</span>
+                <h2>El único sistema que te ofrece una estimación realista ANTES de hablar con contratistas.</h2>
+
+                <p class="lead">
+                    Analizo y comparo los precios estándar de varios contratistas en tu área para establecer un rango de costo justo y transparente. Esta evaluación evita sobreprecios, reparaciones innecesarias y decisiones tomadas bajo presión.
+                </p>
+
+                <div class="soft-quote-comparison">
+                    <div class="card inflated">
+                        <h3>Cotizaciones infladas</h3>
+                        <p class="price">$11,500 – $16,000</p>
+                    </div>
+                    <div class="card realistic">
+                        <h3>Rango realista según mercado</h3>
+                        <p class="price">$8,200 – $9,600</p>
+                    </div>
+                </div>
+
+                <p class="key-message">
+                    👉 Sin este análisis, entras a la conversación con contratistas sin una referencia objetiva.
+                </p>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="section section-services">
+            <div class="container">
+                <span class="eyebrow">Servicios</span>
+                <h2>Paquetes de asesoría</h2>
+                
+                <div class="services-grid">
                     <div class="service-card">
-                        <h3>Residential</h3>
-                        <p>Complete residential roofing solutions</p>
+                        <h3>Diagnóstico básico</h3>
+                        <p>Evaluación del estado de tu techo + explicación de problemas + recomendaciones iniciales.</p>
                     </div>
                     <div class="service-card">
-                        <h3>Commercial</h3>
-                        <p>Professional commercial services</p>
+                        <h3>Soft-Quote completo</h3>
+                        <p>Diagnóstico + rango realista de precios + opciones de reparación con pros y contras.</p>
                     </div>
                     <div class="service-card">
-                        <h3>Inspections</h3>
-                        <p>Thorough roof inspections</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Repairs</h3>
-                        <p>Emergency repair services</p>
+                        <h3>Acompañamiento en obra</h3>
+                        <p>Supervisión independiente durante la ejecución de tu proyecto de roofing.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="pricing">
+
+        <!-- PRICING -->
+        <section id="pricing" class="section section-pricing">
             <div class="container">
-                <h2>Pricing</h2>
+                <span class="eyebrow">Precios</span>
+                <h2>Inversión en información clara</h2>
+                
                 <div class="pricing-grid">
-                    <div class="price-card">
-                        <h3>Basic</h3>
-                        <p class="price">$299</p>
+                    <div class="pricing-card">
+                        <h3>Diagnóstico</h3>
+                        <p class="price">$150</p>
                         <ul>
-                            <li>Visual inspection</li>
-                            <li>Basic report</li>
-                            <li>Photos</li>
-                        </ul><a href="#contact" class="btn-secondary">Choose Plan</a>
+                            <li>Evaluación técnica in-situ</li>
+                            <li>Reporte fotográfico</li>
+                            <li>Explicación de problemas</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Agendar</a>
                     </div>
-                    <div class="price-card featured">
-                        <h3>Pro</h3>
-                        <p class="price">$599</p>
+                    <div class="pricing-card featured">
+                        <span class="badge">Más popular</span>
+                        <h3>Soft-Quote</h3>
+                        <p class="price">$350</p>
                         <ul>
-                            <li>Full inspection</li>
-                            <li>Detailed report</li>
-                            <li>Recommendations</li>
-                            <li>Estimates</li>
-                        </ul><a href="#contact" class="btn-primary">Choose Plan</a>
+                            <li>Todo lo del diagnóstico</li>
+                            <li>Rango realista de costos</li>
+                            <li>3 opciones de reparación</li>
+                            <li>Asesoría estratégica</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Agendar</a>
                     </div>
-                    <div class="price-card">
-                        <h3>Enterprise</h3>
-                        <p class="price">Custom</p>
+                    <div class="pricing-card">
+                        <h3>Acompañamiento</h3>
+                        <p class="price">$500+</p>
                         <ul>
-                            <li>Everything in Pro</li>
-                            <li>Priority support</li>
-                            <li>Maintenance plan</li>
-                        </ul><a href="#contact" class="btn-secondary">Contact Us</a>
+                            <li>Supervisión en obra</li>
+                            <li>Revisión de contratos</li>
+                            <li>Control de calidad</li>
+                            <li>Informes de avance</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Consultar</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact">
+
+        <!-- CONTACTO -->
+        <section id="contact" class="section section-contact">
             <div class="container">
-                <h2>Contact Us</h2>
-                <form id="contactForm" action="#" method="post"><input type="text" name="name" placeholder="Your Name"
-                        required><input type="email" name="email" placeholder="Your Email" required><input type="tel"
-                        name="phone" placeholder="Phone Number"><textarea name="message" placeholder="Your Message"
-                        rows="5"></textarea><button type="submit" class="btn-primary">Send Message</button></form>
+                <span class="eyebrow">Contacto</span>
+                <h2>Agenda tu diagnóstico</h2>
+                <p>Cuéntame brevemente tu situación y coordinaré una llamada para revisar tu caso.</p>
+
+                <form id="contactForm" action="#" method="post">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Nombre completo" required aria-label="Nombre completo">
+                        <input type="tel" name="phone" placeholder="Teléfono o WhatsApp" required aria-label="Teléfono o WhatsApp">
+                    </div>
+                    <input type="email" name="email" placeholder="Correo electrónico" required aria-label="Correo electrónico">
+                    <textarea name="message" rows="4" placeholder="Describe el problema de tu techo (años de antigüedad, filtraciones, fotos, etc.)" aria-label="Mensaje"></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                </form>
             </div>
         </section>
     </main>
-    <footer>
+
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Roofing Framework. All rights reserved.</p>
+            <p>&copy; 2025 Roofing Advisor. Asesoría independiente en roofing.</p>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
-
 </html>
