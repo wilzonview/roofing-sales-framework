@@ -11,6 +11,29 @@
     --copper-accent: #B87333;
     --weathered-blue: #5B7C8D;
     --off-white: #F5F5F0;
+
+    /* Brand palette */
+    --primary: var(--copper-accent);
+    --secondary: var(--weathered-blue);
+    --success: #2ea56b;
+    --warning: #f5a623;
+    --error: #d64545;
+
+    /* Typography scale */
+    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+    --base-font-size: 16px;
+    --heading-xl: 3.2rem;
+    --heading-lg: 2.4rem;
+    --heading-md: 1.8rem;
+    --heading-sm: 1.4rem;
+
+    /* Layout DNA */
+    --section-padding-y: 5rem;
+    --radius-soft: 6px;
+    --radius-card: 12px;
+    --shadow-soft: 0 4px 20px rgba(0,0,0,0.08);
+    --shadow-strong: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 html {
@@ -18,14 +41,15 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
+    font-size: var(--base-font-size);
     color: var(--slate-charcoal);
     background: var(--off-white);
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-weight: 600;
 }
 
@@ -129,7 +153,7 @@ nav.scrolled {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: var(--heading-xl);
     color: var(--off-white);
     margin-bottom: 1rem;
     line-height: 1.2;
@@ -207,13 +231,13 @@ nav.scrolled {
 
 /* Section Styles */
 section {
-    padding: 5rem 2rem;
+    padding: var(--section-padding-y) 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 section h2 {
-    font-size: 2.5rem;
+    font-size: var(--heading-lg);
     margin-bottom: 1rem;
     text-align: center;
     color: var(--slate-charcoal);
@@ -246,7 +270,7 @@ section h2::after {
 
 .about-preview {
     background: linear-gradient(180deg, rgba(184, 115, 51, 0.08) 0%, rgba(245, 245, 240, 0.8) 100%);
-    border-radius: 12px;
+    border-radius: var(--radius-card);
     padding: 3rem 2rem;
 }
 
@@ -259,7 +283,7 @@ section h2::after {
 }
 
 .about-text h3 {
-    font-size: 1.8rem;
+    font-size: var(--heading-md);
     margin-bottom: 1rem;
     color: var(--brick-brown);
 }
@@ -274,14 +298,14 @@ section h2::after {
     height: 100%;
     min-height: 320px;
     background: linear-gradient(135deg, rgba(44, 53, 57, 0.95), rgba(91, 124, 141, 0.9));
-    border-radius: 12px;
+    border-radius: var(--radius-card);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--off-white);
     padding: 2rem;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    box-shadow: var(--shadow-strong);
 }
 
 /* Services Section */
@@ -308,8 +332,8 @@ section h2::after {
 .service-card {
     background: white;
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-soft);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-top: 3px solid var(--copper-accent);
 }
@@ -341,8 +365,8 @@ section h2::after {
 /* Case Studies */
 .case-studies {
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-soft);
 }
 
 .cases-grid {
@@ -390,9 +414,9 @@ section h2::after {
 .pricing-card {
     background: white;
     padding: 2.5rem 2rem;
-    border-radius: 8px;
+    border-radius: var(--radius-card);
     text-align: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow-soft);
     transition: transform 0.3s ease;
 }
 
@@ -450,15 +474,15 @@ section h2::after {
 
 .testimonials {
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-soft);
 }
 
 .testimonial-card {
     background: white;
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-soft);
 }
 
 .testimonial-text {
@@ -477,7 +501,7 @@ section h2::after {
 .author-avatar {
     width: 50px;
     height: 50px;
-    background: var(--weathered-blue);
+    background: var(--secondary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -501,8 +525,8 @@ section h2::after {
     text-align: center;
     background: linear-gradient(135deg, rgba(44, 53, 57, 0.92), rgba(91, 124, 141, 0.9));
     color: var(--off-white);
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-strong);
 }
 
 .cta-content h2 {
