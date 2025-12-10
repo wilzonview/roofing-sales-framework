@@ -107,7 +107,7 @@ nav.scrolled {
 }
 
 /* Hero Section */
-#home {
+.hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
