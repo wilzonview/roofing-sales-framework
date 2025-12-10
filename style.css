@@ -34,7 +34,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(44, 53, 57, 0.95);
+    background: #000;
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
