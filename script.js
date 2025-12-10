@@ -24,12 +24,14 @@ window.addEventListener('scroll', () => {
 });
 
 // Active navigation link highlighting
-const sections = document.querySelectorAll('section');
 const navLinksArray = document.querySelectorAll('.nav-link');
+const sectionTargets = Array.from(navLinksArray)
+    .map(link => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
 
 window.addEventListener('scroll', () => {
     let current = '';
-    sections.forEach(section => {
+    sectionTargets.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
         if (window.scrollY >= sectionTop - 200) {
